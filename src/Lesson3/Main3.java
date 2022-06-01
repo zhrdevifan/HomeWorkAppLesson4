@@ -52,14 +52,31 @@ public class Main3 {
         System.out.println("  ");
         System.out.println("Задание 4: тут мы должны заполнить дагонали единицами ");
         int[][] arr = new int[4][4];
-        for (int i=0; i < 4; i++) {
-            for (int j=0; j < 4; j++) {
-                //arr [][] = counter
-                System.out.print( arr [i][j] + "  ");
-            }
-             System.out.println();
-
+        for (int i=0; i < arr[0].length; i++) {
+            arr[0][0] = 1;
         }
+        for (int i=0; i < arr[0].length; i++) {
+            arr[1][1] = 1;
+        }
+        for (int i=0; i < arr[0].length; i++) {
+            arr[2][2] = 1;
+        }
+        for (int i=0; i < arr[0].length; i++) {
+            arr[3][3] = 1;
+        }
+        for (int i=0; i < arr[0].length; i++) {
+            arr[4][4] = 1;
+       // }
+        //for (int i=0; i < arr[0].length; i++) {
+            //arr[arr.length-1][i] = 1;
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j] + "  ");
+                //System.out.print(arr[i][j] + "  ");
+            }
+        }
+             //System.out.println();
+
+
 
     }
 
