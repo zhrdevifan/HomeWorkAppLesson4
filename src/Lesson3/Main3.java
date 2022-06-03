@@ -1,5 +1,7 @@
 package Lesson3;
 
+import java.util.Scanner;
+
 public class Main3 {
 
     public static void main (String[] args) {
@@ -7,6 +9,7 @@ public class Main3 {
         massiv100();
         zadanie3();
         diagonal();
+        len();
 
     }
 
@@ -54,33 +57,59 @@ public class Main3 {
         int[][] arr = new int[4][4];
         for (int i=0; i < arr[0].length; i++) {
             arr[0][0] = 1;
+            for (int j = 0; j < arr[0].length; j++){
+                arr[0][3] = 1;
+            }
         }
         for (int i=0; i < arr[0].length; i++) {
             arr[1][1] = 1;
+            for (int j = 0; j < arr[0].length; j++) {
+                arr[1][2] = 1;
+            }
         }
         for (int i=0; i < arr[0].length; i++) {
             arr[2][2] = 1;
+            for (int j = 0; j < arr[0].length; j++) {
+                arr[2][1] = 1;
+            }
         }
         for (int i=0; i < arr[0].length; i++) {
             arr[3][3] = 1;
-        }
-        for (int i=0; i < arr[0].length; i++) {
-            arr[4][4] = 1;
-       // }
-        //for (int i=0; i < arr[0].length; i++) {
-            //arr[arr.length-1][i] = 1;
-            for (int j = 0; j < arr[i].length; j++) {
+            for (int j = 0; j < arr[0].length; j++) {
+                arr[3][0] = 1;
+            }
+            for (int j = 0; j < arr.length; j++) {
                 System.out.print(arr[i][j] + "  ");
                 //System.out.print(arr[i][j] + "  ");
-            }
+                }System.out.println();
         }
-             //System.out.println();
+
+
+
+        }
+
+
+    public static void len() {
+        System.out.println(" задание 5");
+        Scanner scanner = new Scanner(System.in);
+        int len = scanner.nextInt();
+        int initialValue = scanner.nextInt();
+        //int arr [] = new int [len] [initialValue];
+        int[] arr = new int [len];
+        arr [5] = initialValue;
+
+        //for (int initialValue = 1; initialValue < arr.length +1 ; initialValue++){
+            System.out.print(arr[len]);}
+
+
 
 
 
     }
 
-}
+
+
+
 
 
    // public static void massive021(String args []) {
