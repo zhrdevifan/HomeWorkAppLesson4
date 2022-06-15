@@ -2,7 +2,7 @@ package Lesson3;
 
 import java.util.Scanner;
 
-public class Main3 {
+public class Main {
 
     public static void main (String[] args) {
         massive021_120();
